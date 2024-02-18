@@ -1,0 +1,16 @@
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+
+public class MainTest {
+
+    @Test
+    public void testFindMax() {
+        int[] intArray = {30, 5, 0, 44, 15, 225, 9};
+        int expectedMax = 225;
+
+        int maxNum = Main.findMax(intArray);
+
+        assertEquals(expectedMax, maxNum);
+        System.out.println("Maximum number ");
+    }
+}
